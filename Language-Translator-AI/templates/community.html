@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Community Chat</title>
+</head>
+<body>
+    <h1>Community Chat</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/translate">Translate Language</a>
+        <a href="/emergency">Emergency Assistance</a>
+    </nav>
+
+    <form action="/community" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="40" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <h2>Messages</h2>
+    <div>
+        {% for msg in messages %}
+            <p><strong>{{ msg[1] }}</strong>: {{ msg[2] }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

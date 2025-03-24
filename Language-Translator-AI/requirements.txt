@@ -1,0 +1,10 @@
+Flask
+SpeechRecognition
+gTTS
+googletrans==4.0.0-rc1
+opencv-python
+pytesseract
+geopy
+torch
+transformers
+openai-whisper

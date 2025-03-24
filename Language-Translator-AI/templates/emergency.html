@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Emergency Assistance</title>
+</head>
+<body>
+    <h1>Emergency Assistance</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/translate">Translate Language</a>
+        <a href="/community">Community</a>
+    </nav>
+
+    <p>If you are in an emergency, please contact local authorities or emergency services. You can also describe your situation below, and we will attempt to translate your message for assistance.</p>
+
+    <form action="/emergency" method="post">
+        <label for="description">Describe your emergency:</label>
+        <textarea id="description" name="description" rows="5" cols="40" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

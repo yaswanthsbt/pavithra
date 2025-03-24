@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="static/styles.css" >
+  <title>Language Translator AI</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="fade-in">Welcome to Language Translator AI</h1>
+      <nav class="glass-nav">
+        <a href="/translate" class="nav-link">Translate Language</a>
+        <a href="/community" class="nav-link">Community</a>
+        <a href="/emergency" class="nav-link">Emergency Assistance</a>
+      </nav>
+    </header>
+
+    <section class="content slide-up">
+      <p class="zoom-in">Select a service to get started. This application provides real-time language translation, community interaction, and emergency assistance for travelers and tribal people.</p>
+    </section>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
